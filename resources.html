@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Care Planner Checklist | Beyond Hands</title>
+    <meta name="description" content="Use the free Beyond Hands care planner checklist to prepare for conversations, organise practical next steps and support family carers.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="topbar">
+        <div class="topbar-inner">
+            <span>A little more support can make a world of difference.</span>
+            <a href="tel:+447853931199"><i class="fas fa-phone"></i> Speak with us: 07853 931199</a>
+        </div>
+    </div>
+    <div class="sidebar-overlay"></div>
+    <aside class="sidebar-drawer" id="mobile-navigation" aria-label="Mobile navigation" aria-hidden="true" inert>
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="logo.png" alt="Beyond Hands Logo">
+                <h3>Beyond Hands</h3>
+            </div>
+            <button class="close-sidebar-btn" type="button" aria-label="Close navigation"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="services.html"><i class="fas fa-hand-holding-heart"></i> Services</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="resources.html"><i class="fas fa-clipboard-list"></i> Care Planner</a></li>
+            <li><a href="faq.html"><i class="fas fa-circle-question"></i> FAQs</a></li>
+            <li><a href="index.html#pricing"><i class="fas fa-tags"></i> Pricing</a></li>
+            <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Book Consultation</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p><i class="fas fa-phone"></i> <a href="tel:+447853931199">07853 931199</a></p>
+            <p>Practical care, personal support.</p>
+        </div>
+    </aside>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Beyond Hands Logo">
+            <div>
+                <h2>Beyond Hands</h2>
+                <p>Compassionate support. Practical help. Peace of mind.</p>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="resources.html">Care Planner</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+        </ul>
+        <a class="nav-cta" href="booking.html">Let’s talk <i class="fas fa-arrow-right"></i></a>
+        <button class="menu-btn" type="button" aria-label="Open navigation" aria-controls="mobile-navigation" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="hero-content">
+                <span class="hero-kicker"><span></span> A free, practical tool</span>
+                <h1>A calmer way to plan.<br><em>One step at a time.</em></h1>
+                <p>When there’s a lot to think about, it can help to see the next steps in one place. Use this checklist in whatever way works for you—there’s no need to finish it all today.</p>
+                <div class="hero-buttons">
+                    <a href="#planner" class="btn">Open the checklist <i class="fas fa-arrow-down"></i></a>
+                    <a href="booking.html" class="btn-outline">Talk with us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="planner-page-section" id="planner" aria-labelledby="planner-title">
+            <div class="section-heading">
+                <h2 class="section-title" id="planner-title">Your family care planner</h2>
+                <p>Tick anything that feels useful. This is a gentle prompt list, not a test or a substitute for professional advice.</p>
+            </div>
+            <p class="planner-intro"><strong>Your privacy matters.</strong> Your checklist ticks are saved only in this browser on this device. We don’t collect them or save any personal notes. Use the print button if you’d prefer a paper copy.</p>
+
+            <div class="planner-progress">
+                <div class="planner-progress-row">
+                    <span>Your progress</span>
+                    <span id="planner-progress-text" role="status" aria-live="polite">0 of 10 steps checked</span>
+                </div>
+                <progress id="planner-progress" max="10" value="0" aria-label="Care planner checklist progress"></progress>
+            </div>
+
+            <form class="planner-grid" id="care-planner">
+                <section class="planner-group" aria-labelledby="planner-conversation-title">
+                    <h2 id="planner-conversation-title">Before a conversation</h2>
+                    <ul class="planner-check-list">
+                        <li><label class="planner-check"><input type="checkbox" value="main-question"> Think about the one thing you’d most like help with first.</label></li>
+                        <li><label class="planner-check"><input type="checkbox" value="questions"> Jot down any questions you want to ask.</label></li>
+                        <li><label class="planner-check"><input type="checkbox" value="preferred-contact"> Decide how and when it’s easiest for someone to contact you.</label></li>
+                    </ul>
+                </section>
+
+                <section class="planner-group" aria-labelledby="planner-organisation-title">
+                    <h2 id="planner-organisation-title">Getting organised</h2>
+                    <ul class="planner-check-list">
+                        <li><label class="planner-check"><input type="checkbox" value="appointments"> Keep appointment dates and follow-ups together in one place.</label></li>
+                        <li><label class="planner-check"><input type="checkbox" value="letters"> Gather letters or forms you’d like help understanding.</label></li>
+                        <li><label class="planner-check"><input type="checkbox" value="contacts"> Make a list of services or people you may need to contact.</label></li>
+                    </ul>
+                </section>
+
+                <section class="planner-group" aria-labelledby="planner-at-home-title">
+                    <h2 id="planner-at-home-title">Day-to-day support</h2>
+                    <ul class="planner-check-list">
+                        <li><label class="planner-check"><input type="checkbox" value="routine"> Notice which parts of the daily routine feel hardest at the moment.</label></li>
+                        <li><label class="planner-check"><input type="checkbox" value="breaks"> Think about what would give family carers a little breathing space.</label></li>
+                        <li><label class="planner-check"><input type="checkbox" value="check-ins"> Consider whether a regular check-in or update would be reassuring.</label></li>
+                    </ul>
+                </section>
+
+                <section class="planner-group" aria-labelledby="planner-next-title">
+                    <h2 id="planner-next-title">Choosing a next step</h2>
+                    <ul class="planner-check-list">
+                        <li><label class="planner-check"><input type="checkbox" value="small-step"> Choose one small, manageable thing to focus on next.</label></li>
+                    </ul>
+                </section>
+            </form>
+
+            <div class="planner-tools">
+                <button class="btn" id="planner-print" type="button"><i class="fas fa-print"></i> Print this checklist</button>
+                <button class="planner-reset" id="planner-reset" type="button">Clear my ticks</button>
+                <p class="planner-status" id="planner-status" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="planner-cta">
+            <h2 class="section-title">You don’t have to figure it out alone.</h2>
+            <p>We can talk through the practical support that may suit your family—one step at a time.</p>
+            <a href="booking.html" class="btn">Request a no-pressure conversation <i class="fas fa-arrow-right"></i></a>
+        </section>
+    </main>
+
+    <a href="https://wa.me/447853931199?text=Hello%20Beyond%20Hands%2C%20I%E2%80%99d%20like%20to%20ask%20about%20your%20support."
+       class="whatsapp-btn" aria-label="Message Beyond Hands on WhatsApp" title="Message us on WhatsApp" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a href="tel:+447853931199" class="call-btn" aria-label="Call Beyond Hands" title="Call Beyond Hands">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Beyond Hands</h3>
+                <p>Caring with heart. Supporting your family.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="booking.html">Book a Consultation</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+447853931199">07853 931199</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:Hello@BeyondHands.co.uk">Hello@BeyondHands.co.uk</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
