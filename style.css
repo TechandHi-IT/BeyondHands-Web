@@ -376,7 +376,7 @@ section {
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 30px;
 }
 
@@ -2183,7 +2183,7 @@ section {
 }
 
 .large-grid {
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
 }
 
 .faq-section {
@@ -2356,8 +2356,10 @@ footer h4 {
 
     .hero {
         min-height: 0;
+        grid-template-columns: 1fr;
         padding: 76px 7% 90px;
         gap: 55px;
+        text-align: center;
     }
 
     .hero-content {
@@ -3249,5 +3251,20 @@ footer ul.footer-links-two-col li {
 @media (max-width: 380px) {
     footer ul.footer-links-two-col {
         columns: 1;
+    }
+}
+
+@media (max-width: 760px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 12px;
+    }
+
+    .feature-card + .feature-card {
+        border-top: 1px solid #e9ebe3;
+        border-left: 0;
     }
 }
